@@ -11,7 +11,7 @@ static void op_MIDI_CC_set(const void *data, scene_state_t *ss, exec_state_t *es
     command_state_t *cs);
 
 
-const tele_op_t op_MIDI_CC = MAKE_SET_OP(MIDI.CC, op_MIDI_CC_set, 1, true);
+const tele_op_t op_MIDI_CC = MAKE_GET_OP(MIDI.CC, op_MIDI_CC_set, 1, true);
 
 
 static void op_MIDI_CC_set(const void *NOTUSED(data),
